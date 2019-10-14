@@ -19,7 +19,11 @@
           align-items: center;
   max-width: 922px;
   margin: auto;
-  color: yellow;
+  color: white;
+}
+
+.nav-logo:hover {
+  color: #cccccc;
 }
 
 .nav .menu-nav {
@@ -36,11 +40,11 @@
 }
 
 .nav .menu-nav__item.active > a {
-  color: #cccc00;
+  color: #cccccc;
 }
 
 .nav .menu-nav__link {
-  color: yellow;
+  color: white;
   text-transform: uppercase;
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
@@ -48,18 +52,18 @@
 }
 
 .nav .menu-nav__link:hover {
-  color: #cccc00;
+  color: #cccccc;
 }
 
 body {
-  color: purple;
+  color: #24292e;
   height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
 }
 
 header {
-  background: purple;
+  background: #24292e;
   padding: 6px;
   width: 100%;
 }
