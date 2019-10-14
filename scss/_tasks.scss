@@ -29,6 +29,10 @@
   padding-top: 80px;
   padding-bottom: 84px;
 
+  h2 {
+    margin-bottom: 20px;
+  }
+
   &__add-task li {
     cursor: pointer;
     list-style-type: none;
@@ -36,25 +40,14 @@
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 14px;
+    display: flex;
 
-    &:hover {
-      color: red;
-    }
-
-    .tasks__add-task__icon {
-      color: red;
-      font-size: 25px;
+    .tasks__add-task__icon-holder {
       margin-right: 12px;
+      line-height: 16px;
+      color: red;
+      cursor: pointer;
     }
-
-    .tasks__add-task__text {
-      // color: $primary-color;
-      font-size: 14px;
-    }
-  }
-
-  h2 {
-    margin-bottom: 20px;
   }
 
   &__list li {
