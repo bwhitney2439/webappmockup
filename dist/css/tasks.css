@@ -1,0 +1,8 @@
+.container {
+  max-width: 922px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=tasks.css.map */
