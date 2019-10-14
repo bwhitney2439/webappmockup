@@ -26,7 +26,7 @@
     </header>
 
     <main>
-      <section class="container">
+      <section class="content">
         <div class="sidebar">
           <h2>This is the sidebar</h2>
           <ul class="sidebar__list">
@@ -41,16 +41,22 @@
           <h2>Project Name goes here</h2>
           <ul class="tasks__list">
             <li>
-              <input type="checkbox" />
-              <span>This is task 1</span>
-            </li>
-            <li>
-              <input type="checkbox" />
+              <div class="checkbox-holder" role="button">
+                <span class="checkbox"></span>
+              </div>
               <span>This is task 2</span>
             </li>
             <li>
-              <input type="checkbox" />
-              <span>This is task 3</span>
+              <div class="checkbox-holder" role="button">
+                <span class="checkbox"></span>
+              </div>
+              <span>This is task 2</span>
+            </li>
+          </ul>
+          <ul class="tasks__add-task">
+            <li>
+              <span class="tasks__add-task__icon">+</span>
+              <span class="tasks__add-task__text">Add Task</span>
             </li>
           </ul>
         </div>

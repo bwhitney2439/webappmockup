@@ -55,24 +55,93 @@
   color: #cccccc;
 }
 
-.container {
+.content {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
   max-width: 922px;
   margin: auto;
 }
 
-.container .sidebar {
+.sidebar {
   width: 266px;
   position: fixed;
   background-color: #fafafa;
-  height: calc(100vh - 50px);
+  height: 100vh;
   overflow-x: hidden;
   overflow-y: hidden;
   padding-top: 74px;
+  border-right: 1px solid #f1f1f1;
 }
 
-.container .tasks {
+.tasks {
   width: 656px;
   margin-left: 266px;
+  background-color: white;
+  min-height: 100vh;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 80px;
+  padding-bottom: 84px;
+}
+
+.tasks__add-task li {
+  cursor: pointer;
+  list-style-type: none;
+  line-height: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+.tasks__add-task li:hover {
+  color: red;
+}
+
+.tasks__add-task li .tasks__add-task__icon {
+  color: red;
+  font-size: 25px;
+  margin-right: 12px;
+}
+
+.tasks__add-task li .tasks__add-task__text {
+  font-size: 14px;
+}
+
+.tasks h2 {
+  margin-bottom: 20px;
+}
+
+.tasks__list li {
+  list-style-type: none;
+  line-height: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  border-bottom: 1px solid #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tasks__list li .checkbox-holder {
+  margin-right: 12px;
+  line-height: 16px;
+}
+
+.tasks__list li .checkbox-holder .checkbox {
+  cursor: pointer;
+  border-color: gray;
+  color: #343434;
+  height: 16px;
+  width: 16px;
+  display: block;
+  border: 1px solid gray;
+  border-radius: 16px;
 }
 
 body {
