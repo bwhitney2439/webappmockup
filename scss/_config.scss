@@ -1,0 +1,12 @@
+$primary-color: purple;
+$secondary-color: yellow;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin transition-ease {
+  transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,17 @@
+@import "config";
+@import "menu";
+
+body {
+  color: $primary-color;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+}
+
+header {
+  background: $primary-color;
+  padding: 6px;
+  //   height: 44px;
+  //   position: fixed;
+  width: 100%;
+}
