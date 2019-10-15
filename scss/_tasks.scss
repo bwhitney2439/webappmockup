@@ -17,6 +17,23 @@
   overflow-y: hidden;
   padding-top: 74px;
   border-right: $generic-border;
+
+  &__list li {
+    margin-top: 10px;
+    min-height: 24px;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 18px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: lighten($secondary-color, 10%);
+    }
+
+    &.current {
+      background-color: lighten($secondary-color, 10%);
+    }
+  }
 }
 
 .tasks {

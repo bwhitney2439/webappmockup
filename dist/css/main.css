@@ -78,6 +78,23 @@
   border-right: 1px solid #f1f1f1;
 }
 
+.sidebar__list li {
+  margin-top: 10px;
+  min-height: 24px;
+  padding: 5px;
+  font-size: 14px;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.sidebar__list li:hover {
+  background-color: white;
+}
+
+.sidebar__list li.current {
+  background-color: white;
+}
+
 .tasks {
   width: 656px;
   margin-left: 266px;
